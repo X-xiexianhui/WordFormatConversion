@@ -2,7 +2,7 @@
 ## 命令格式
 ###
 #### 1.help：
-    - go run main.go help word
+    go run main.go help word
 #### 2.单词转换：
-    - go run main.go word -s=abcd -m=1
+    go run main.go word -s=abcd -m=1
     输出结果：ABCD
