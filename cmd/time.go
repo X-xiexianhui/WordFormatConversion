@@ -4,7 +4,7 @@
  * @Author: XieXianhui
  * @Date: 2021-12-31 20:31:36
  * @LastEditors: XieXianhui
- * @LastEditTime: 2021-12-31 21:20:06
+ * @LastEditTime: 2021-12-31 21:34:20
  */
 package cmd
 
@@ -35,7 +35,7 @@ var nowTimeCmd = &cobra.Command{
 	Long:  "获取当前时间",
 	Run: func(cmd *cobra.Command, args []string) {
 		nowTime := timer.GetNowTime()
-		log.Panicf("输出结果：%s,%d", nowTime.Format("2006-01-02 15:04:05"), nowTime.Unix())
+		log.Printf("输出结果：%s,%d", nowTime.Format("2006-01-02 15:04:05"), nowTime.Unix())
 	},
 }
 
