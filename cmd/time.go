@@ -4,7 +4,7 @@
  * @Author: XieXianhui
  * @Date: 2021-12-31 20:31:36
  * @LastEditors: XieXianhui
- * @LastEditTime: 2021-12-31 21:34:20
+ * @LastEditTime: 2021-12-31 21:57:04
  */
 package cmd
 
@@ -56,7 +56,7 @@ var calculateTimeCmd = &cobra.Command{
 				layout = "2006-01-02"
 			}
 			if space == 1 {
-				layout = "2006-01-02 15:04"
+				layout = "2006-01-02 15:04:05"
 			}
 			currentTimer, err = time.Parse(layout, calculateTime)
 			if err != nil {
