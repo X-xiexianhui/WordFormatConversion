@@ -1,10 +1,10 @@
 /*
- * @Description:初始化cmd
+ * @Description:初始化cmd,用于注册子命令
  * @version:
  * @Author: XieXianhui
  * @Date: 2021-12-29 22:23:21
  * @LastEditors: XieXianhui
- * @LastEditTime: 2021-12-30 17:45:56
+ * @LastEditTime: 2021-12-31 21:01:50
  */
 package cmd
 
@@ -23,11 +23,12 @@ func Execute() error {
 }
 
 /**
- * @Description:命令行初始化
+ * @Description:子命令注册
  * @name:init
  * @param {*}
  * @return {*}
  */
 func init() {
 	rootCmd.AddCommand(wordCmd)
+	rootCmd.AddCommand(timeCmd)
 }
